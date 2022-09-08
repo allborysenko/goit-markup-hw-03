@@ -13,6 +13,22 @@
     --footer-address: rgba(255, 255, 255, 0.6);
 }
 
+/* *{
+  outline: 2px solid tomato;   */
+}
+h1, h2, h3, h4, h5, h6, ul, p {
+    margin: 0;
+}
+ul {
+    padding: 0;
+}
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 body {
 font-family: 'Roboto', sans-serif;
 letter-spacing: 0.03em;
@@ -24,6 +40,8 @@ font-weight: 400;
 
 /* Логотип */
 .logo {
+    display: inline-block;
+    padding-top: 24px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -87,8 +105,13 @@ font-weight: 400;
 /* Герой */
 .hero-section {
     background-color: var(--hero-bgc);
+    text-align: center;
+
 }
 .hero {
+    width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -100,6 +123,9 @@ font-weight: 400;
 
 /* Кнопка  */
 .btn {
+    width: 216px;
+    height: 50px;
+    border-radius: 4px;
     cursor: pointer;
     background-color: var(--accent);
     font-family: 'Roboto', sans-serif;
@@ -116,15 +142,24 @@ font-weight: 400;
     background-color:var(--accent-hover);
 }
 
+.benefit-list {
+    padding-top: 107px;
+    padding-bottom: 94px;
+}
 .benefit-title {
+    margin-bottom: 10px;
     font-weight: 700;
     line-height: 1.143;
     text-transform: uppercase;
     font-size: 14px;
 }
 .benefits-desc {
+    width: 270px;
     line-height: 1.71;
     color: var(--secondary-text);
+}
+.whatwedo {
+    margin-bottom: 50px;
 }
 .whatwedo, .team-tile {
     font-weight: 700;
@@ -132,7 +167,10 @@ font-weight: 400;
     line-height: 1.17;
     text-align: center;
 }
-
+.team-tile {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
 .team {
     background-color:var(--bgc-team);
 }
@@ -141,6 +179,7 @@ font-weight: 400;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    margin-bottom: 10px;
     }
 
 .team-disc {
@@ -148,20 +187,33 @@ font-weight: 400;
     line-height: 1.19;
     color: var(--secondary-text);
 }
+ .team-member img{
+    margin-bottom: 50px;
+ }
+
 
 /* Футер */
+.footer .logo {
+   padding-top: 60px;
+   padding-bottom: 20px;
+}
 .footer {
     background-color: var(--hero-bgc);
 }
 .main-address {
     font-style: normal;
+    padding-bottom: 60px;
+}
+.main-address li {
+    margin-bottom: 9px;
 }
 .address {
     color: var(--white-text);
     text-decoration: none;
     line-height: 1.71;
-      }
-.mail {
+    }
+     
+    .mail {
     color: var(--footer-address);
     text-decoration: none;
     line-height: 1.71;
