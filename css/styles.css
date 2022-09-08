@@ -1,0 +1,220 @@
+:root {
+    --accent: #2196F3;
+    --accent-hover: #188CE8;
+    --main-text: #212121;
+    --background-color: #FFFFFF;
+    --secondary-text: #757575;
+    --white-text: #FFFFFF;
+    --black-text: #000000;
+    --hero-bgc: #2F303A;
+    --bgc-poster: #EEEEEE;
+    --bgc-heder: #ECECEC;
+    --bgc-team: #F5F4FA;
+    --footer-address: rgba(255, 255, 255, 0.6);
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+letter-spacing: 0.03em;
+color: var(--main-text);
+background-color:var(--background-color);
+font-size: 14px;
+font-weight: 400;
+}
+
+/* Логотип */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+.logo-accent {
+    color: var(--accent)
+}
+.header > a {
+    color: var(--black-text);
+}
+
+.logo-white {
+    color: var(--white-text);
+}
+.nav-item.current {
+    color: var(--accent);
+}
+
+/* Навигация  */
+.header-nav {   
+    font-weight: 500;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    }
+.nav-item {
+    text-decoration: none;
+    color: var(--main-text);
+}
+
+    
+
+.nav-item:hover,
+.nav-item:focus,
+.contact-item:hover,
+.contact-item:focus,
+.mail:hover,
+.mail:focus,
+.address:hover,
+.address:focus {
+    color: var(--accent)
+}
+
+.item,
+.benefit-item {
+    list-style-type: none;
+}
+.contact-item {
+    color: var(--secondary-text);
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.143;
+    text-decoration: none;
+}
+
+.team-member {
+    background-color:var(--background-color);
+}
+
+/* Герой */
+.hero-section {
+    background-color: var(--hero-bgc);
+}
+.hero {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-text);
+}
+
+/* Кнопка  */
+.btn {
+    cursor: pointer;
+    background-color: var(--accent);
+    font-family: 'Roboto', sans-serif;
+    color: var(--white-text);
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    font-size: 16px; 
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    background-color:var(--accent-hover);
+}
+
+.benefit-title {
+    font-weight: 700;
+    line-height: 1.143;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.benefits-desc {
+    line-height: 1.71;
+    color: var(--secondary-text);
+}
+.whatwedo, .team-tile {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.team {
+    background-color:var(--bgc-team);
+}
+
+.team-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    }
+
+.team-disc {
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--secondary-text);
+}
+
+/* Футер */
+.footer {
+    background-color: var(--hero-bgc);
+}
+.main-address {
+    font-style: normal;
+}
+.address {
+    color: var(--white-text);
+    text-decoration: none;
+    line-height: 1.71;
+      }
+.mail {
+    color: var(--footer-address);
+    text-decoration: none;
+    line-height: 1.71;
+   }
+
+.btn-nav {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    }
+
+/* Навигация портфолио  */
+
+.btn-nav:hover, 
+.btn-nav:focus {
+    background-color: var(--accent);
+    color: var(--white-text);
+}
+
+/* Портфолио */
+.portfolio-link{
+    text-decoration: none;
+}
+.porfolio-list {
+    background-color:var(--bgc-poster);
+}
+.portfolio-name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2.0;
+        letter-spacing: 0.06em;
+        color: var(--main-text);
+
+}
+.portfolio-disc {
+        font-size: 16px;
+        line-height: 1.88;
+        color: var(--secondary-text);
+       
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
