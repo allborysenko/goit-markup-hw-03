@@ -28,6 +28,7 @@ ul, li {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    outline: 1px solid tomato;
 }
 
 body {
@@ -41,6 +42,8 @@ font-weight: 400;
 
 /* Логотип */
 .logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
     margin-right: 92px;
     display: inline-block;
     font-family: 'Raleway', sans-serif;
@@ -140,6 +143,7 @@ font-weight: 400;
 
 }
 .hero {
+    
     width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -154,6 +158,7 @@ font-weight: 400;
 
 /* Кнопка  */
 .btn {
+    margin-bottom: 210px;
     width: 216px;
     height: 50px;
     border-radius: 4px;
@@ -210,9 +215,8 @@ font-weight: 400;
     margin-bottom: 94px;
 }
 
-.item {
-    margin-left: 30px;
-}
+
+
 .whatwedo {
     margin-bottom: 50px;
     margin-top: 0;
