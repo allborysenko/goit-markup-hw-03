@@ -13,16 +13,19 @@
     --footer-address: rgba(255, 255, 255, 0.6);
 }
 
-/* *{
-  outline: 2px solid tomato;   */
+*{
+  outline: 2px solid tomato;  
 }
-h1, h2, h3, h4, h5, h6, ul, p {
-    margin: 0;
-}
-ul, li {
+h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
 }
+
+ul, p {
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     margin: 0 auto;
     width: 1200px;
@@ -42,10 +45,8 @@ font-weight: 400;
 
 /* Логотип */
 .logo {
-    margin-top: 24px;
-    margin-bottom: 25px;
-    margin-right: 92px;
-    display: inline-block;
+    margin-right: 93px;
+    display: block;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -77,31 +78,31 @@ font-weight: 400;
     letter-spacing: 0.02em;
     }
 .nav-item {
-    
+   
     text-decoration: none;
     color: var(--main-text);
 }
-.list-nav{
+ .list-nav .item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.list-nav {
     display: flex;
 }
-.list-nav .item {
+ .list-nav .item:not(:last-child) {
     margin-right: 50px;
 }
-.list-nav .item:last-child {
-    margin-right: 0;
-}
+
 .contact {
     display: flex;
     margin-left: auto;
 }
-.contact .item {
-    margin-right: 50px;
-    }
-    
-.contact .item:last-child{
-    margin-right: 0;
+
+.contact .item:not(:first-child) {
+    margin-left: 50px;
 }
-    
+
+
 
 .nav-item:hover,
 .nav-item:focus,
@@ -205,22 +206,21 @@ font-weight: 400;
 }
 
 /* Чим займаємося  */
-
-.what-to-do .item:first-child {
-    margin-left: 0;
+.workimg {
+    display: block;
 }
-
 .what-to-do {
     display: flex;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
-
-
-
 .whatwedo {
     margin-bottom: 50px;
     margin-top: 0;
 }
+.what-to-do .item:not(:last-child){
+    margin-right: 30px;
+}
+
 .whatwedo, .team-tile {
     font-weight: 700;
     font-size: 36px;
@@ -229,14 +229,12 @@ font-weight: 400;
 }
 
 /* Наша команда  */
-
 .ourteam {
     display: flex;
-    text-align: center;
-    
+    text-align: center;  
 }
-
-
+.ourteam .team-member:not(:last-child) {
+    margin-right: 30px;}
 .team-tile {
     padding-top: 94px;
     padding-bottom: 50px;
@@ -244,7 +242,6 @@ font-weight: 400;
 .team {
     background-color:var(--bgc-team);
 }
-
 .team-item {
     font-weight: 500;
     font-size: 16px;
@@ -267,13 +264,16 @@ font-weight: 400;
 
 /* Футер */
 .footer .logo {
+    width: 145px;
    padding-top: 60px;
    padding-bottom: 20px;
+   margin-right: 0;
 }
 .footer {
     background-color: var(--hero-bgc);
 }
 .main-address {
+    width: 231px;
     font-style: normal;
     padding-bottom: 60px;
 }
