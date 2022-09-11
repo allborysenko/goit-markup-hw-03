@@ -11,27 +11,22 @@
     --bgc-heder: #ECECEC;
     --bgc-team: #F5F4FA;
     --footer-address: rgba(255, 255, 255, 0.6);
+    --border-header: #ECECEC;
 }
 
-*{
-  outline: 2px solid tomato;  
-}
 h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
 }
-
 ul, p {
     padding: 0;
     margin: 0;
 }
-
 .container {
     margin: 0 auto;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid tomato;
 }
 
 body {
@@ -59,6 +54,7 @@ font-weight: 400;
 .header {
     display: flex;
     align-items:center;
+    border-bottom: 1px solid #ECECEC;
 }
 .header > a {
     color: var(--black-text);
@@ -102,8 +98,6 @@ font-weight: 400;
     margin-left: 50px;
 }
 
-
-
 .nav-item:hover,
 .nav-item:focus,
 .contact-item:hover,
@@ -144,7 +138,6 @@ font-weight: 400;
 
 }
 .hero {
-    
     width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -260,8 +253,6 @@ font-weight: 400;
  .team-member img{
     margin-bottom: 30px;
  }
-
-
 /* Футер */
 .footer .logo {
     width: 145px;
@@ -308,6 +299,17 @@ font-weight: 400;
     background-color: var(--accent);
     color: var(--white-text);
 }
+.btn-nav {
+    background-color: var(--bgc-team);
+    border-radius: 4px;
+    padding: 6px 22px;
+}
+.btn-nav.all{
+    padding: 6px 25px;
+}
+.filter-item .item:not(:last-child){
+    margin-right: 8px;
+}
 
 /* Портфолио */
 .portfolio-link{
@@ -317,20 +319,47 @@ font-weight: 400;
     background-color:var(--bgc-poster);
 }
 .portfolio-name {
+        
+        padding-top: 20px;
+        padding-bottom: 4px;
         font-weight: 700;
         font-size: 18px;
         line-height: 2.0;
         letter-spacing: 0.06em;
         color: var(--main-text);
-
 }
+ .portfolio-list .portfolio-name{
+    width: 322px;
+    display: block;
+    margin-left: 24px;
+ }
+
 .portfolio-disc {
         font-size: 16px;
         line-height: 1.88;
         color: var(--secondary-text);
        
 }
+.portfolio-list .portfolio-disc {
+    width: 322px;
+    display: block;
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
 
+.portfolio-item {
+    display: flex;
+    flex-wrap:wrap
+}
+.portfolio-item .portfolio-list:not(:nth-child(3n+3)) {
+    margin-right: 30px;
+}
+.portfolio-item .portfolio-list:nth-child(-n+6) {
+    margin-bottom: 30px;
+}
+.portfolio-item .portfolio-list:nth-child(n+7) {
+    margin-bottom: 94px;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -342,4 +371,15 @@ font-weight: 400;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+.filter-item {
+    display: flex;
+    padding-top: 94px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.cards{
+    border-left:1px solid #EEEEEE ;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
