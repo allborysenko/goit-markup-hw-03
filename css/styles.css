@@ -54,7 +54,7 @@ font-weight: 400;
 .header {
     display: flex;
     align-items:center;
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px;
 }
 .header > a {
     color: var(--black-text);
@@ -290,6 +290,10 @@ font-weight: 400;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    background-color: var(--bgc-team);
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: none;
     }
 
 /* Навигация портфолио  */
@@ -299,11 +303,7 @@ font-weight: 400;
     background-color: var(--accent);
     color: var(--white-text);
 }
-.btn-nav {
-    background-color: var(--bgc-team);
-    border-radius: 4px;
-    padding: 6px 22px;
-}
+
 .btn-nav.all{
     padding: 6px 25px;
 }
@@ -379,6 +379,7 @@ font-weight: 400;
     justify-content: center;
 }
 .cards{
+    width: 370px;
     border-left:1px solid #EEEEEE ;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
