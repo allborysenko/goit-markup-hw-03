@@ -8,12 +8,14 @@
     --black-text: #000000;
     --hero-bgc: #2F303A;
     --bgc-poster: #EEEEEE;
-    --bgc-heder: #ECECEC;
+    --bgc-header: #ECECEC;
     --bgc-team: #F5F4FA;
     --footer-address: rgba(255, 255, 255, 0.6);
     --border-header: #ECECEC;
 }
-
+/* *{
+    outline: 1px solid red; */
+}
 h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
@@ -52,11 +54,14 @@ font-weight: 400;
     color: var(--accent)
 }
 .header {
-    display: flex;
     align-items:center;
-    border-bottom: 1px;
 }
-.header > a {
+.main-nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-header);
+}
+.container > a {
     color: var(--black-text);
 }
 
@@ -74,13 +79,11 @@ font-weight: 400;
     letter-spacing: 0.02em;
     }
 .nav-item {
-   
     text-decoration: none;
     color: var(--main-text);
 }
- .list-nav .item {
-    padding-top: 32px;
-    padding-bottom: 32px;
+ .list-nav .item{
+    padding: 32px 0px;
 }
 .list-nav {
     display: flex;
@@ -88,10 +91,12 @@ font-weight: 400;
  .list-nav .item:not(:last-child) {
     margin-right: 50px;
 }
-
 .contact {
     display: flex;
     margin-left: auto;
+}
+.contact .contact-item{
+    padding: 32px 0px;
 }
 
 .contact .item:not(:first-child) {
@@ -135,7 +140,8 @@ font-weight: 400;
 .hero-section {
     background-color: var(--hero-bgc);
     text-align: center;
-
+    padding-top: 200px;
+    padding-bottom: 210px;
 }
 .hero {
     width: 696px;
@@ -152,9 +158,7 @@ font-weight: 400;
 
 /* Кнопка  */
 .btn {
-    margin-bottom: 210px;
-    width: 216px;
-    height: 50px;
+    padding: 10px 32px;
     border-radius: 4px;
     cursor: pointer;
     background-color: var(--accent);
@@ -174,7 +178,6 @@ font-weight: 400;
 
 .benefit-list {
     display: flex;
-
     padding-top: 107px;
     padding-bottom: 94px;
 }
@@ -199,13 +202,16 @@ font-weight: 400;
 }
 
 /* Чим займаємося  */
+.examples {
+    padding-bottom: 94px;
+}
 .workimg {
     display: block;
 }
 .what-to-do {
     display: flex;
-    padding-bottom: 94px;
-}
+    }
+
 .whatwedo {
     margin-bottom: 50px;
     margin-top: 0;
@@ -229,11 +235,11 @@ font-weight: 400;
 .ourteam .team-member:not(:last-child) {
     margin-right: 30px;}
 .team-tile {
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .team {
     background-color:var(--bgc-team);
+    padding: 94px 0px;
 }
 .team-item {
     font-weight: 500;
@@ -244,21 +250,22 @@ font-weight: 400;
     }
 
 .team-disc {
-    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     color: var(--secondary-text);
-    
 }
- .team-member img{
-    margin-bottom: 30px;
- }
+.container-name {
+    padding: 30px 70px;
+}
+
 /* Футер */
+.footer {
+    padding: 60px 0px;
+}
 .footer .logo {
     width: 145px;
-   padding-top: 60px;
-   padding-bottom: 20px;
-   margin-right: 0;
+    margin-bottom: 20px;
+    margin-right: 0;
 }
 .footer {
     background-color: var(--hero-bgc);
@@ -269,18 +276,21 @@ font-weight: 400;
     padding-bottom: 60px;
 }
 .main-address li {
-    margin-bottom: 9px;
+    /* margin-bottom: 9px; */
 }
 .address {
     color: var(--white-text);
     text-decoration: none;
     line-height: 1.71;
-    }
+}
      
     .mail {
     color: var(--footer-address);
     text-decoration: none;
     line-height: 1.71;
+   }
+   .footer-conact .item:not(:last-child){
+    margin-bottom: 9px;
    }
 
 .btn-nav {
@@ -319,34 +329,18 @@ font-weight: 400;
     background-color:var(--bgc-poster);
 }
 .portfolio-name {
-        
-        padding-top: 20px;
-        padding-bottom: 4px;
+        margin-bottom: 4px;
         font-weight: 700;
         font-size: 18px;
         line-height: 2.0;
         letter-spacing: 0.06em;
         color: var(--main-text);
 }
- .portfolio-list .portfolio-name{
-    width: 322px;
-    display: block;
-    margin-left: 24px;
- }
-
 .portfolio-disc {
         font-size: 16px;
         line-height: 1.88;
-        color: var(--secondary-text);
-       
+        color: var(--secondary-text);     
 }
-.portfolio-list .portfolio-disc {
-    width: 322px;
-    display: block;
-    margin-left: 24px;
-    margin-bottom: 20px;
-}
-
 .portfolio-item {
     display: flex;
     flex-wrap:wrap
@@ -383,4 +377,5 @@ font-weight: 400;
     border-left:1px solid #EEEEEE ;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
+    padding: 20px 54px 24px;
 }

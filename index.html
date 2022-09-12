@@ -13,22 +13,22 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
     <!--Шапка сайту-->
-    <div class="container">
     <header class="header">
-        <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a>
-        <nav class="header-nav">
-            <ul class="list-nav">
-                <li class="item"><a class="nav-item current" href="./index.html">Студія</a></li>
-                <li class="item"><a class="nav-item" href="./portfolio.html">Портфоліо</a></li>
-                <li class="item"><a class="nav-item" href="#">Контакти</a></li>
-            </ul>
-        </nav>
-        <ul class="contact">
-            <li class="item"><a class="contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="item"><a class="contact-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        <div class="container main-nav">
+            <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a>
+            <nav class="header-nav">
+                <ul class="list-nav">
+                    <li class="item"><a class="nav-item current" href="./index.html">Студія</a></li>
+                    <li class="item"><a class="nav-item" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="item"><a class="nav-item" href="#">Контакти</a></li>
+                </ul>
+            </nav>
+                <ul class="contact">
+                    <li class="item"><a class="contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="item"><a class="contact-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+        </div>
     </header>
-    </div>
 <main>
         <!--Герой-->
         <section class="hero-section">
@@ -63,7 +63,7 @@
         </div>     
         </section>
         <!--Чим ми займаємось-->
-        <section>
+        <section class="examples">
             <div class="container">
                 <h2 class="whatwedo">Чим ми займаємося</h2>
             <ul class="what-to-do">
@@ -80,24 +80,31 @@
                 <ul class="ourteam">
                 <li class="team-member item">
                     <img class="workimg" src="./images/igor-demiyanenko.jpg" alt="Product Designer" width="270">
-                    <h3 class="team-item">Ігор Дем'яненко</h3>
-                    <p class="team-disc">Product Designer</p>
-
+                    <div class="container-name">
+                        <h3 class="team-item">Ігор Дем'яненко</h3>
+                        <p class="team-disc">Product Designer</p>
+                    </div>
                 </li>
                 <li class="team-member item">
                     <img class="workimg" src="./images/olha-repina.jpg" alt="Frontend Developer" width="270">
-                    <h3 class="team-item">Ольга Рєпіна</h3>
-                    <p class="team-disc">Frontend Developer</p>
+                    <div class="container-name">
+                        <h3 class="team-item">Ольга Рєпіна</h3>
+                        <p class="team-disc">Frontend Developer</p>
+                    </div>
                 </li>
                 <li class="team-member item">
                     <img class="workimg" src="./images/mykola-tarasov.jpg" alt="Marketing" width="270">
-                    <h3 class="team-item">Микола Тарасов</h3>
-                    <p class="team-disc">Marketing</p>
+                    <div class="container-name">
+                        <h3 class="team-item">Микола Тарасов</h3>
+                        <p class="team-disc">Marketing</p>
+                    </div>
                 </li>
                 <li class="team-member item">
                     <img class="workimg" src="./images/ermakov.jpg" alt="UI Designer" width="270">
-                    <h3 class="team-item">Михайло Єрмаков</h3>
-                    <p class="team-disc">UI Designer</p>
+                    <div class="container-name">
+                        <h3 class="team-item">Михайло Єрмаков</h3>
+                        <p class="team-disc">UI Designer</p>
+                    </div>
                 </li>
                 </ul>
             </div>
@@ -110,7 +117,7 @@
             <a class="logo" href="./index.html"><span class="logo-accent">Web</span><span
                     class="logo-white">Studio</span></a>
             <address class="main-address">
-                <ul>
+                <ul class="footer-conact">
                     <li class="item"><a class="address" href="https://cutt.ly/aXV1ov9" target="_blank"
                             rel="nofollow noopener noreferrer">м. Київ, пр-т Лесі Українки,
                             26</a></li>
